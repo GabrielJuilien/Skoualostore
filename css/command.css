@@ -1,0 +1,14 @@
+table {
+  color: inherit;
+  font-size: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+table td {
+  width: 25%;
+}
+
+a {
+  color: inherit;
+}

@@ -1,0 +1,123 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url("../img/background.png");
+  background-attachment: fixed;
+  background-size:fill;
+  margin: 0px 0px 0px 0px;
+}
+
+@font-face {
+    font-family: "Streamster";
+    src: url("../fonts/Streamster.ttf");
+}
+
+#top {
+  position: fixed;
+  top:0;
+  max-height: 120px;
+  z-index: 10;
+}
+
+.banner-img {
+  width: 100%;
+  overflow-y: hidden;
+  object-fit: cover;
+}
+
+nav {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 0px 5px 0px;
+  width:100%;
+  background-color: #121212;
+  top: 0;
+  font-weight: bold;
+}
+
+nav ul {
+  margin: 0px;
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  list-style-type: none;
+  font-size: 30px;
+}
+
+nav ul li {
+  text-align: center;
+  flex: 1 1 0px;
+  position: relative;
+}
+
+nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #C0C;
+  padding: 0 0 0 0;
+  border-bottom: 2px solid #121212
+}
+
+nav a:hover {
+  color: #F0F;
+  border-bottom: 2px solid #F0F;
+}
+
+.menu-fold {
+  display: none;
+  background-color: #121212;
+  position: absolute;
+  width: 100%;
+  z-index: 50;
+}
+
+nav > ul li:hover .menu-fold {
+  display: block;
+}
+
+.menu-fold li {
+  float: none;
+  width: 100%;
+  text-align: left;
+}
+
+.menu-fold a {
+  padding: 10px;
+  border-bottom: 2px solid #121212;
+}
+
+.menu-fold a:hover {
+  border-bottom: 2px solid #F0F;
+  color: #F0F;
+}
+
+
+#content {
+  clear:both;
+  display:block;
+  width: 75%;
+  min-height: 400px;
+  margin: 250px auto 100px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: #121212;
+  color: #D0D;
+  font-size: 25px;
+  text-align: center;
+}
+
+
+.title {
+  text-align: center;
+  color: #25FDE9;
+  font-size: 55px;
+  font-family: "Streamster";
+  margin: 10px auto;
+}
